@@ -1,7 +1,32 @@
 Propriedades 
 
 Todo nó é Rubro ou Negro.
+
 A raiz principal da árvore é sempre Negra;
+
 Toda folha (NULL ou NIL) é negra;
-Se um nó é Rubro, seu filho é necessariamente Negro;
+
+Se um nó é Rubro, seu filho é necessariamente Negro. Nao pode existir dois nós rubros;
+
+Qualquer caminho da raiz até uma sub-árvore vazia tem um número igual ao de nós negros (altura negra);
+
+BALANCEAMENTO
+
+Feito através de rotações e ajustes de cores a cada inserção ou remoção
+
+
+ALTURA
+
+
+
+AVL x ARN
+
+Teoricamente possuem a mesma complexidade
+
+Na prática 
+
+
+OPERAÇÕES
+
+ROTACIONAR:
 
