@@ -1,0 +1,7 @@
+Propriedades 
+
+Todo nó é Rubro ou Negro.
+A raiz principal da árvore é sempre Negra;
+Toda folha (NULL ou NIL) é negra;
+Se um nó é Rubro, seu filho é necessariamente Negro;
+
