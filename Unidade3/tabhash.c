@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "tabhash.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 // Definição do nó que será utilizado no encadeamento
 struct No {
@@ -22,7 +20,8 @@ struct tabela_hash {
 
 // Função hash para calcular o índice da palavra na tabela
 int funcao_hash(char *palavra, int tam, int pesos[]) {
-    unsigned int hash = 0;
+    
+    int hash = 0;
     for (int i = 0; palavra[i] != '\0'; i++) {
         hash = hash * 31 + palavra[i] * pesos[i % 100];
     }
@@ -54,6 +53,7 @@ struct tabela_hash *hash_criar(int tam) {
 
 // Função para destruir uma tabela hash
 void hash_destruir(struct tabela_hash *t) {
+    
     if (!t) return;
 
     for (int i = 0; i < t->tam; i++) {
@@ -87,7 +87,7 @@ int hash_inserir(struct tabela_hash *t, char *palavra, int dado) {
     no = malloc(sizeof(struct No));
     if (!no) return 0;
 
-    no->palavra = strdup(palavra);
+    no->palavra = strdup(palavra); //vai duplicar a string, copiando a string para uma nova área da memória
     if (!no->palavra) {
         free(no);
         return 0;
