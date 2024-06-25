@@ -1,7 +1,10 @@
-#include <stdio.h>
-<<<<<<< HEAD
 
-int main() {
+#include <stdlib.h>
+#include <string.h>
+#include "tabhash.h"
+
+int main(){
+
     // Cria uma tabela hash com tamanho 10
     struct tabela_hash *tabela = hash_criar(10);
 
@@ -57,13 +60,6 @@ int main() {
     printf("Tabela hash destruída.\n");
 
     return 0;
-}
-=======
-#include <stdlib.h>
-#include <string.h>
-#include "tabhash.h"
-
-int main(){
     
 }
->>>>>>> refs/remotes/origin/main
+
