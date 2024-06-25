@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include "hash_table.h" // Arquivo header onde estarão as declarações das funções e structs
 
 int main() {
@@ -58,3 +59,12 @@ int main() {
 
     return 0;
 }
+=======
+#include <stdlib.h>
+#include <string.h>
+#include "tabhash.h"
+
+int main(){
+    
+}
+>>>>>>> refs/remotes/origin/main
