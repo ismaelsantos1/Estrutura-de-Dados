@@ -1,5 +1,5 @@
 #include <stdio.h>
-<<<<<<< HEAD
+#include "tabhash.h" // Arquivo header onde estarão as declarações das funções e structs
 
 int main() {
     // Cria uma tabela hash com tamanho 10
@@ -27,10 +27,14 @@ int main() {
         printf("Erro ao inserir palavra3.\n");
 
     // Tenta inserir uma palavra já existente
-    if (hash_inserir(tabela, "palavra1", 400))
+    if (hash_inserir(tabela, "palavra1", 400)){
+
         printf("Inserido: palavra1 -> 400\n");
-    else
+    }
+    else{
+
         printf("Erro ao inserir palavra1 (já existente).\n");
+    }
 
     // Busca por uma palavra na tabela
     int resultado = hash_buscar(tabela, "palavra2");
@@ -58,12 +62,3 @@ int main() {
 
     return 0;
 }
-=======
-#include <stdlib.h>
-#include <string.h>
-#include "tabhash.h"
-
-int main(){
-    
-}
->>>>>>> refs/remotes/origin/main
