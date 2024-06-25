@@ -1,6 +1,5 @@
 #include <stdio.h>
 <<<<<<< HEAD
-#include "hash_table.h" // Arquivo header onde estarão as declarações das funções e structs
 
 int main() {
     // Cria uma tabela hash com tamanho 10
