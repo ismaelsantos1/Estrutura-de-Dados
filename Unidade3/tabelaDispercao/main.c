@@ -1,7 +1,9 @@
-#include <stdio.h>
-#include "tabhash.h" // Arquivo header onde estarão as declarações das funções e structs
+#include <stdlib.h>
+#include <string.h>
+#include "tabhash.h"
 
-int main() {
+int main(){
+
     // Cria uma tabela hash com tamanho 10
     struct tabela_hash *tabela = hash_criar(10);
 
@@ -61,4 +63,6 @@ int main() {
     printf("Tabela hash destruída.\n");
 
     return 0;
+
 }
+
